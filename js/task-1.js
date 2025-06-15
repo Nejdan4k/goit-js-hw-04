@@ -1,8 +1,13 @@
-function slugify(title) {
-  return title.toLowerCase().split(' ').join('-');
+// Функція перевіряє, чи помістяться всі товари в контейнер
+function isEnoughCapacity(products, containerSize) {
+  // Обчислюємо суму значень усіх товарів
+  const totalQuantity = Object.values(products).reduce((sum, value) => sum + value, 0);
+  // Порівнюємо з розміром контейнера
+  return totalQuantity <= containerSize;
 }
 
-console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
-console.log(slugify("English for developer")); // "english-for-developer"
-console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
-console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+// Тестові виклики
+console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
+console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)); // false
+console.log(isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 }, 14)); // true
+console.log(isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7)); // false

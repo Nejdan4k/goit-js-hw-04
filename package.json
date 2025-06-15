@@ -1,20 +1,20 @@
 {
-  "name": "goit-js-hw-03",
+  "name": "goit-js-hw-04",
   "version": "1.0.0",
-  "description": "Homework #3 for JavaScript course",
+  "description": "Homework #4 for JavaScript course",
   "scripts": {
     "push": "git add . && git commit -m 'update' && git push"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nejdan4k/goit-js-hw-03.git"
+    "url": "https://github.com/Nejdan4k/goit-js-hw-04.git"
 
   },
   "keywords": [],
   "author": "Anton Stryzhavchuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nejdan4k/goit-js-hw-03/issues"
+    "url": "https://github.com/Nejdan4k/goit-js-hw-04/issues"
   },
-  "homepage": "https://github.com/Nejdan4k/goit-js-hw-03#readme"
+  "homepage": "https://github.com/Nejdan4k/goit-js-hw-04#readme"
 }
